@@ -10,7 +10,7 @@ class SnakeGame {
     food = null
     foodSize = 70
     score = 0
-    winScore = 1
+    winScore = 5
     foods = [
         {
             'texture': PIXI.Texture.from('assets/apple.png'),
