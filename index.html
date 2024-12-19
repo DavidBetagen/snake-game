@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Snake Game with PixiJS</title>
+        <style>
+            @font-face {
+                font-family: "PressStart2P";
+                src: url("fonts/PressStart2P.ttf");
+            }
+            html * {
+                font-family: PressStart2P !important;
+            }
+
+            .btn {
+              @apply block px-4 py-2 bg-green-500 text-white font-bold rounded
+            }
+
+        </style>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.jsdelivr.net/npm/pixi.js@7.x/dist/pixi.min.js"></script>
+    </head>
+    <body class="bg-[#d2e5b9]">
+      
+      <div id="controls" class="lg:hidden absolute bottom-16 left-1/2 transform -translate-x-1/2 mb-5 flex flex-col items-center space-y-">
+          <button id="up" class="w-24 h-20 bg-[#0F4036] text-white rounded-full flex items-center justify-center border-4 border-gray-600 shadow-lg hover:shadow-xl transform hover:scale-110">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+              </svg>
+          </button>
+      
+          <div class="flex space-x-20">
+              <button id="left" class="w-24 h-20 bg-[#0F4036] text-white rounded-full flex items-center justify-center border-4 border-gray-600 shadow-lg hover:shadow-xl transform hover:scale-110">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                  </svg>
+              </button>
+      
+              <button id="right" class="w-24 h-20 bg-[#0F4036] text-white rounded-full flex items-center justify-center border-4 border-gray-600 shadow-lg hover:shadow-xl transform hover:scale-110">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+              </button>
+          </div>
+      
+          <button id="down" class="w-24 h-20 bg-[#0F4036] text-white rounded-full flex items-center justify-center border-4 border-gray-600 shadow-lg hover:shadow-xl transform hover:scale-110">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+          </button>
+      </div>
+    
+      <script src="app2.js"></script>
+    </body>
+</html>
